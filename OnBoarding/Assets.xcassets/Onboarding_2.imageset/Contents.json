@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Onboarding_iPhone_DE_Light_02.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Onboarding_iPhone_DE_Light_02 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Onboarding_iPhone_DE_Light_02 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
