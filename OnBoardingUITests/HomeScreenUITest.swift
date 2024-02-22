@@ -42,7 +42,7 @@ final class HomeScreenUITest: XCTestCase {
         XCTAssert(startBtn.isHittable)
         startBtn.tap()
         //navigate
-        let onBoardingView = app.staticTexts["OnBoarding_Screen"]
+        let onBoardingView = app.collectionViews["OnBoarding_Screen"]
         XCTAssertTrue(onBoardingView.exists, "The screen named Onboarding does not exist.")
         XCTAssertTrue(onBoardingView.waitForExistence(timeout: 5), "View did not load within 5 seconds")
     }
