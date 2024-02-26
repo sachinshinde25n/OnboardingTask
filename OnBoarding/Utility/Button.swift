@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct AppButton: View {
-    
+
     var title: String = ""
     var backgroundColor: Color = Color.white
     var foregroundColor: Color = Color.gray
     var accessibilityHint: String = ""
     public let onTap: () -> Void
-    
+
     public init(title: String, backgroundColor: Color, foregroundColor: Color, accessibilityHint: String, onTap: @escaping () -> Void) {
         self.title = title
         self.backgroundColor = backgroundColor
@@ -22,7 +22,7 @@ struct AppButton: View {
         self.accessibilityHint = accessibilityHint
         self.onTap = onTap
     }
-    
+
     public var body: some View {
         Button {
             onTap()
@@ -31,7 +31,7 @@ struct AppButton: View {
                 .font(.body)
                 .padding(.horizontal, 100)
                 .foregroundColor(foregroundColor)
-                
+
         }
         .accessibilityHint(accessibilityHint)
         .padding(.vertical, 15)
@@ -40,9 +40,6 @@ struct AppButton: View {
         .accessibilityIdentifier(title)
     }
 }
-
-
-
 
 #Preview {
     AppButton(title: "Save", backgroundColor: Color.white, foregroundColor: .white, accessibilityHint: "Button", onTap: {

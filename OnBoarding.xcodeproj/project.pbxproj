@@ -196,6 +196,7 @@
 				EA0F7ED12B7E1AA50078AF95 /* Sources */,
 				EA0F7ED22B7E1AA50078AF95 /* Frameworks */,
 				EA0F7ED32B7E1AA50078AF95 /* Resources */,
+				EA9FD1A42B8C853B003CC0F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -310,6 +311,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA9FD1A42B8C853B003CC0F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\" \nif which swiftlint >/dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA0F7ED12B7E1AA50078AF95 /* Sources */ = {
@@ -492,6 +513,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OnBoarding/Preview Content\"";
 				DEVELOPMENT_TEAM = K2GH358D95;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,6 +544,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"OnBoarding/Preview Content\"";
 				DEVELOPMENT_TEAM = K2GH358D95;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

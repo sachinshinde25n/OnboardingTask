@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DashboardView: View {
-    
-    @Binding var path : [Int]
+
+    @Binding var path: [Int]
     var body: some View {
         Text("Dashboard")
     }
